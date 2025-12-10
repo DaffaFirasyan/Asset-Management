@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Modules\Asset\Http\Controllers;
+namespace App\Modules\ChatBot\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Modules\Asset\Http\Requests\ChatRequest;
-use App\Modules\Asset\Services\AssetChatService;
-use App\Modules\Asset\Transformers\ChatResource;
+use App\Modules\ChatBot\Http\Requests\ChatRequest;
+use App\Modules\ChatBot\Services\AssetChatService;
+use App\Modules\ChatBot\Transformers\ChatResource;
 
 class ChatController extends Controller
 {

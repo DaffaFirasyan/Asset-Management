@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Asset\Transformers;
+namespace App\Modules\ChatBot\Transformers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
