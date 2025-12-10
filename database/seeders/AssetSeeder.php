@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Asset;
+use App\Modules\Asset\Models\Asset;
 
 class AssetSeeder extends Seeder
 {
