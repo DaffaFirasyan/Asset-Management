@@ -14,8 +14,82 @@
             background-attachment: fixed;
         }
         /* Animasi Chat Widget */
-        .chat-widget { transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1); transform-origin: bottom right; }
-        .chat-hidden { transform: scale(0); opacity: 0; pointer-events: none; }
+        .chat-widget { 
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1); 
+            transform-origin: bottom right; 
+        }
+        .chat-hidden { 
+            transform: scale(0.85); 
+            opacity: 0; 
+            pointer-events: none; 
+        }
+        .button-hidden { 
+            transform: scale(0.7); 
+            opacity: 0; 
+            pointer-events: none; 
+        }
+        #chatButton { 
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); 
+        }
+        #chatBox::-webkit-scrollbar { 
+            width: 6px; 
+        }
+        #chatBox::-webkit-scrollbar-track { 
+            background: transparent; 
+        }
+        #chatBox::-webkit-scrollbar-thumb { 
+            background: rgba(147, 51, 234, 0.2); 
+            border-radius: 10px; 
+        }
+        #chatBox::-webkit-scrollbar-thumb:hover { 
+            background: rgba(147, 51, 234, 0.4); 
+        }
+        /* Chatbot Response Styling */
+        .chatbot-response { 
+            font-size: 0.75rem; 
+            line-height: 1.6; 
+        }
+        .chatbot-response p { 
+            margin: 0; 
+            padding: 0; 
+        }
+        .chatbot-response h1,
+        .chatbot-response h2,
+        .chatbot-response h3,
+        .chatbot-response h4,
+        .chatbot-response h5,
+        .chatbot-response h6 { 
+            font-size: 0.8125rem; 
+            font-weight: 600; 
+            margin: 0.5rem 0 0.25rem 0; 
+            color: #374151;
+        }
+        .chatbot-response ul,
+        .chatbot-response ol { 
+            margin: 0.25rem 0; 
+            padding-left: 1.25rem; 
+        }
+        .chatbot-response li { 
+            margin: 0.125rem 0; 
+        }
+        .chatbot-response strong { 
+            font-weight: 600; 
+            color: #1f2937;
+        }
+        .chatbot-response code { 
+            background: #f3f4f6; 
+            padding: 0.125rem 0.25rem; 
+            border-radius: 0.25rem; 
+            font-size: 0.6875rem;
+        }
+        .chatbot-response table { 
+            font-size: 0.6875rem; 
+            margin: 0.5rem 0;
+        }
+        .chatbot-response table th,
+        .chatbot-response table td { 
+            padding: 0.25rem 0.5rem; 
+        }
         /* Style Tabel Markdown */
         .prose table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.875rem; }
         .prose th, .prose td { border: 1px solid #e5e7eb; padding: 4px 8px; }
